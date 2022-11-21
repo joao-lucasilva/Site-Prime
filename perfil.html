@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/perfil.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script src="https://kit.fontawesome.com/1ca14a394b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#cel').mask('(00) 00000-0000')
+        })
+    </script>
+    <title>Prime Auto Mechanic</title>
+</head>
+<body>
+    <header>
+    <a href="#" id="logo"><img src="imgs/logo.png"style="width: 110px;"></a>
+    <nav>
+        <ul>
+        <li><a href="perfil.html" id="perfil">Perfil</a></li>
+        <li><a href="chat.html" id="chat">Chat</a></li>
+        <li><a href="agenda.html" id="visita">Agendar Visita</a></li>
+        <li><a href="#" id="config">Configurações</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+   <section class="container">
+    <div id="div1">
+        <div id="imagem_perfil">
+            <img src="https://www.eurorepar.com.br/cache/media/garage/garage_image/BR/aerocar/fachada-640-480-crop-16777215.jpg" alt="Imagem de Perfil" id="imagem_perfil">
+        </div>
+        <br><br><br><br>
+        <div id="star">
+            <input name="enviar" type="image" id="img#1" src="imgs/star_ap.png" onload="aoCarregar()" onmouseover="mouseDentro(id)" onmouseout="mouseFora()" onclick="mouseClick(id); return false;" alt="avaliacao">
+                
+            <input name="enviar" type="image" id="img#2" src="imgs/star_ap.png" onload="aoCarregar()"
+            onmouseover="mouseDentro(id)" onmouseout="mouseFora()" onclick="mouseClick(id); return false;" alt="avaliacao">
+                
+            <input name="enviar" type="image" id="img#3" src="imgs/star_ap.png" onload="aoCarregar()" onmouseover="mouseDentro(id)" onmouseout="mouseFora()" onclick="mouseClick(id); return false;" alt="avaliacao">
+                
+            <input name="enviar" type="image" id="img#4" src="imgs/star_ap.png" onload="aoCarregar()" onmouseover="mouseDentro(id)" onmouseout="mouseFora()" onclick="mouseClick(id); return false;" alt="avaliacao">
+                
+            <input name="enviar" type="image" id="img#5" src="imgs/star_ap.png" onload="aoCarregar()" onmouseover="mouseDentro(id)" onmouseout="mouseFora()" onclick="mouseClick(id); return false;" alt="avaliacao">
+        </div>
+        <script> 
+            
+
+            function mouseDentro(id){
+                document.getElementById(id).src = "star_ac.png"
+                if(id == "img#1"){
+                    document.getElementById("img#1").src = "imgs/star_ac.png"
+                }
+                else if (id === "img#2"){
+                    for (var i = 1; i < 3; i++){
+                        document.getElementById("img#" + i).src = "imgs/star_ac.png"
+                    }
+                } else if (id === "img#3"){
+                    for (var i = 1; i < 4; i++){
+                        document.getElementById("img#" + i).src = "imgs/star_ac.png"
+                    }
+                } else if (id === "img#4"){
+                    for (var i = 1; i < 5; i++){
+                        document.getElementById("img#" + i).src = "imgs/star_ac.png"
+                    }
+                } else if (id === "img#5"){
+                    for (var i = 1; i < 6; i++){
+                        document.getElementById("img#" + i).src = "imgs/star_ac.png"
+                    }
+                }
+            }
+            function mouseFora(){
+                for (var i = 1; i < 6; i++){
+                    document.getElementById("img#" + i).src = "imgs/star_ap.png"
+                }
+            }
+
+            function mouseClick(id){
+                var valorVoto = document.getElementById(id).id;
+                var voto = valorVoto[4];
+                    window.location = "pag_perfilAberto.php?voto=" + voto;
+            }
+     </script>
+    </div>
+    <aside id="lateral">
+        <h4>Oficina X</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nihil provident nam sequi corporis mollitia totam adipisci asperiores error ipsam blanditiis eum aliquid quaerat deserunt aspernatur non, in expedita nisi.</p>
+        <a href="completar-perfil.html">Editar Perfil</a>
+    </aside>
+</section>  
+<div id="galeria">
+    <table align="center">
+        <tr>
+            <td><img src="https://blog.simplusbr.com/wp-content/uploads/2020/09/oficina-mecanica-organizada.jpg" alt=""  id="foto"></td>
+            <td><img src="https://www.casadoalinhador.com/images/bl/diferenca-entre-auto-center-e-oficina-mecanica-3.jpg" alt="" id="foto"></td>
+            <td><img src="https://chiptronic.com.br/blog/wp-content/uploads/2019/09/equipamentos-para-oficina.jpg" alt="" id="foto"></td>
+            <td><img src="https://www.ticketlog.com.br/blog/wp-content/uploads/2020/07/dicas-de-oficinas.jpg" alt="" id="foto"></td>
+        </tr>
+        <tr>            
+            <td><img src="https://www.cobli.co/wp-content/uploads/2017/10/mecanico-de-confianca-dicas-para-encontrar-uma-boa-oficina-mecanica.jpg" alt="" id="foto"></td>
+            <td><img src="https://blog.fras-le.com/wp-content/uploads/2018/07/221755-como-atrair-clientes-para-oficina-mecanica-aprenda-com-x-dicas.jpg" alt="" id="foto"></td>
+            <td><img src="https://blog.takao.com.br/wp-content/uploads/2019/04/286570-7-dicas-para-ter-uma-oficina-mecanica-de-carros-importados.jpg" alt="" id="foto"></td>
+            <td><img src="https://www.ticketlog.com.br/blog/wp-content/uploads/2020/07/dicas-de-oficinas.jpg" alt="" id="foto"></td>
+        </tr>
+    </table>  
+</div>
+<h4 id="loc">Localização</h4>
+<div id="mapa">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7570668282474!2d-46.67149978538156!3d-23.64886957071397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a9da27e6f05%3A0xf7a8f76f4caf4256!2sOficina%20Mec%C3%A2nica%20High%20Torque%20Vila%20Mascote!5e0!3m2!1spt-BR!2sbr!4v1668909561402!5m2!1spt-BR!2sbr" width="850px" height="350px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+</div>
+<br><br>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+            </div>
+            <p class="copyright">Prime © 2022</p>
+        </footer>
+    </div>
+</body>
+</html>

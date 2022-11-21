@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script src="https://kit.fontawesome.com/1ca14a394b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#cel').mask('(00) 00000-0000')
+        })
+    </script>
+    <title>Prime Auto Mechanic</title>
+</head>
+<body>
+    <header>
+    <a href="#" id="logo"><img src="imgs/logo.png"style="width: 110px;"></a>
+    <nav>
+        <ul>
+        <li><a href="oficinas.html" id="info">Inicio</a></li>
+        <li><a href="como-funciona.html" id="info">Como Funciona</a></li>
+        <li><a href="login.html" id="portal">Portal do Parceiro</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section class="container">
+        <div id="div1" class="forms">
+                <img src="imgs/logo.png" alt="Logo Prime">
+                <h3>PRIME AUTO MECHANIC</h3>
+                <p>Não tem uma conta?<br>
+            <a href="cadastro.html"> Cadastre-se agora</a></p>
+            </div>
+        <aside id="lateral">
+                <h3>Entre</h3>
+                <form action="login" method="get">
+                    <input type="email" name="email" id="emaillog" placeholder="Email"><br><br>
+                    <input type="password" name="senha" id="senhalig" placeholder="Senha"><br><br>
+                    <input type="submit" name="login">
+                    <p>Esqueceu sua senha?</p>
+                </form>
+        </aside>
+    </section>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Como funciona</a></li>
+                <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+                <li class="list-inline-item"><a href="login.html">Portal do parceiro</a></li>
+            </ul>
+            <p class="copyright">Prime © 2022</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/cadastro.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script src="https://kit.fontawesome.com/1ca14a394b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#cel').mask('(00) 00000-0000')
+        })
+    </script>
+    <title>Prime Auto Mechanic</title>
+</head>
+<body>
+    <header>
+    <a href="#" id="logo"><img src="imgs/logo.png"style="width: 110px;"></a>
+    <nav>
+        <ul>
+        <li><a href="oficinas.html" id="info">Inicio</a></li>
+        <li><a href="como-funciona.html" id="info">Como Funciona</a></li>
+        <li><a href="login.html" id="portal">Portal do Parceiro</a></li>
+        </ul>
+    </nav>
+    </header>
+   <section class="container">
+    <div id="div1">
+        <img src="imgs/logo.png" alt="Logo Prime">
+       
+    
+        <h4>Dados</h4>
+        <input type="text" name="nome" id="nomecad" placeholder="Nome da Oficina"><br>
+        <input type="email" name="email" id="emailcad" placeholder="Email"><br>
+        <input type="password" name="senha" id="senhacad" placeholder="Senha"><br>
+        <input type="tel" name="telefone" id="telefonecad" placeholder="telefone"><br>
+        <p>Ao se cadastrar você concorda com <br> os termos e condições de serviço</p>
+    </div>
+    <aside id="lateral">
+        <h4>Endereço</h4>
+        <input type="number" name="cep" id="cepcad" placeholder="CEP">
+        <input type="text" name="rua" id="ruacad" placeholder="Logradouro">
+        <input type="text" name="cidade" id="cidadecad" placeholder="Cidade"><br>
+        <input type="number" name="numero" id="numerocad" placeholder="Número">
+        <select name="estado" id="estadocad" placeholder="Estado">
+            <option value=""></option>
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option>
+        </select>
+        <br><br>
+        <h4>Recebimento</h4>
+        <input type="text" name="banco" id="bancocad" placeholder="Banco"><br>
+        <input type="number" name="agencia" id="agenciacad" placeholder="Agência">
+        <input type="number" name="conta" id="contacad" placeholder="Conta"><br>
+        <input type="text" name="titular" id="titularcad" placeholder="Titular da Conta">
+
+        <a href="completar-perfil.html"><button id="cadastro">Cadastrar</button></a>
+    </aside>
+</section>
+  
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+            </div>
+            <p class="copyright">Prime © 2022</p>
+        </footer>
+    </div>
+</body>
+</html>

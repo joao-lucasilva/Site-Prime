@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/cliente.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script src="https://kit.fontawesome.com/1ca14a394b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#cel').mask('(00) 00000-0000')
+        })
+    </script>
+    <title>Prime Auto Mechanic</title>
+</head>
+<body>
+    <header>
+        <a href="#" id="logo"><img src="imgs/logo.png"style="width: 110px;"></a>
+        <nav>
+            <ul>
+            <li><a href="index.html" id="index">Inicio</a></li>
+            <li><a href="oficinas.html" id="oficina">Oficinas</a></li>
+            <li><a href="cliente.html" id="cliente">Clientes</a></li>
+            <li><a href="about.html" id="about">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        </header>       
+       
+        <section>
+            <h3>Prime Auto Mechanic</h3>
+            <p>Soluções em elétrica e mecânica para você!</p>
+            <p>Prime é o melhor parceiro para sua oficina!</p>
+            <p>Prime é o seu parceiro para encontrar as melhores oficinas!</p> 
+         </section>
+         <div id="about">
+            <p>A Prime AutoMechanic é uma empresa de tecnologia que faz a ligação entre
+            pessoas que precisam de serviços relacionados a mecânica e elétrica de
+            automóveis e aqueles que possam oferecer esses serviços. Somos uma equipe
+            dedicada em oferecer sempre o melhor serviço aos clientes, por isso criamos uma
+            conexão com as melhores oficinas mecânicas e sempre optamos por indicar a mais
+            próxima que ofereça os melhores serviços.</p>
+            <p>Oferecemos uma solução que possa beneficiar
+            tanto a população que possui um automóvel, como aqueles que trabalham com
+            mecânica e elétrica de veículos. Temos como objetivos:aumentar a eficiência nos
+            serviços de mecânica, simplificar e acelerar o contato entre oficinas e cliente e
+            aumentar a acessibilidade de pessoas a serviços mecânicos de qualidade.</p>
+            <p>Queremos que nossos clientes tenham a melhor experiência possível ao passar por
+            uma situação de problema com o automóvel, por isso o foco de nosso negócio, foi
+            desenvolver um aplicativo mobile que os conecte com a melhor oficina para resolver
+            seu problema. O aplicativo é intuitivo e o cliente pode realizar o pagamento do
+            serviço dentro do próprio aplicativo para ter mais facilidade e praticidade no dia a
+            dia.</p>
+            <p>  Já as oficinas que foram filiadas a nós, contaram com um sistema web e desktop
+            completos para que pudessem gerenciar todo o atendimento ao cliente, dando
+            assim a melhor experiência ao resolver o problema e receberam o valor do serviço
+            em uma conta cadastrada na plataforma.
+            </p>
+            <p>Missão: Como empresa temos como objetivo deixar a vida de nossos clientes
+                mais fácil em relação a problemas automotivos, desfrutando de nossos
+                serviços.
+            </p>
+            <p>Visão: Queremos ser o melhor em nosso ramo de atuação, nos
+                desafiamos a nós mesmos para sempre evoluir o máximo possível para
+                que nós sempre possamos ser o melhor.</p>
+                <p>
+                    Valores: 
+                    <ul>
+                        <li>Inovação;</li>
+                        <li>Integridade</li>
+                        <li>Responsabilidade;</li>
+                        <li>Paixão;</li>
+                        <li>Colaboração;</li>
+                    </ul>
+                    
+                   
+                    
+                    
+                    
+                </p>
+        </div>    
+        
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+                </div>
+                <p class="copyright">Prime © 2022</p>
+            </footer>
+        </div>
+
+        <button class="open-button" onclick="openForm()">Fale Conosco</button>
+
+    <div class="chat-popup" id="myForm">
+    <form action="#" class="form-container">
+        <h1>Fale Conosco</h1>
+
+        <label for="msg"><b>Mensagem:</b></label>
+        <textarea placeholder="Digite sua duvida..." name="msg" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+    </form>
+    </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.height = "490px";
+  document.getElementById("myForm").style.border = "solid black 1px";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.height = "0";
+  document.getElementById("myForm").style.border = "none";
+}
+</script>
+</body>
+</html>

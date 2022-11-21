@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+    color: black;
+    background: #00a9d4;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+ body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+	height: 100%;
+    background-color: #f5f5f5;
+}
+
+/* NAVBAR */
+
+header{
+    align-items: center;
+    border-bottom: solid;
+    border-color: #00a9d4;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+    padding: 36px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 14px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: #00a9d4;
+    transition: 0.5s;
+    border-bottom: solid;
+    padding: 12px 16px;
+}
+
+#logo{
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+/* FORM CONTAINER */
+
+.background{
+    background-image: url(https://chiptronic.com.br/blog/wp-content/uploads/2019/09/equipamentos-para-oficina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.margin{
+    margin: 0px auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    display: flex;
+    max-width: 1023px;
+}
+
+.regcontainer{
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 56px;
+    min-height: 660px;
+}
+
+.reginfo{  
+    align-items: center;
+    color: black;
+    display: grid;
+}
+
+.reginfo h1{
+    font-size: 64px;
+    margin: 0;
+    line-height: 80px;
+    background-color: #00a9d4;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.reg{
+    color: #00a9d4;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 24px;
+}
+
+.formreg{
+    display: grid;
+    gap: 24px;
+    padding-top: 30px;
+}
+
+.divnome, .divemail, .divcel{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+form input[type=text], form input[type=email], form input[type=tel]{
+    padding: 8px;
+    margin-top: 23px;
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.divbutton{
+    display: flex;
+    flex-direction: column;
+}
+
+.btnreg{
+    position: relative;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 8px;
+    padding: 12px;
+    line-height: 24px;
+    color: white;
+    background-color: #00a9d4;
+    font-size: 18px;
+}
+section h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section p{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    color: #00a9d4;
+    font-size: 2em;
+}
+#imgs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#imgs img{
+    width: 15%;
+    height: 15%;
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#buttons button{
+    position: relative;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 8px;
+    padding: 12px;
+    line-height: 24px;
+    color: white;
+    background-color: #00a9d4;
+    font-size: 18px;
+}
+#text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text1 p{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    color: #000000;
+    font-size: 1em;
+}
+#text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text2 p{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    color: #000000;
+    font-size: 1em;
+}
+/* FOOTER */
+
+.footer-basic {
+    padding: 40px 0;
+    background-color: #00a9d4;
+    color: black;
+}
+  
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+  
+.footer-basic li {
+    padding: 0 10px;
+}
+  
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+  
+.footer-basic ul a:hover {
+    opacity: 1;
+}
+  
+.footer-basic .social {
+    text-align: center;
+    padding-bottom: 25px;
+}
+  
+.footer-basic .social > a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+  
+.footer-basic .social > a:hover {
+    opacity: 1;
+}
+  
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0;
+}
+
+.footer-basic .copyright{
+    font-size: 16px;
+}
+
+/* Btn chat */
+.open-button {
+    background-color: #00a9d4;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    border: solid 2px black;
+    transition: 0.5s;
+    border-radius: 60px;
+  }
+  
+.chat-popup {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    height: 0;
+    right: 23px;
+    z-index: 9;
+    transition: 1s;
+    border-radius: 12px;
+  }
+  
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: #00a9d4;
+    display: grid;
+    border-radius: 12px;
+  }
+  
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    border-radius: 15px;
+    border: solid black 2px;
+  }
+  
+.form-container textarea:focus {
+    transition: background-color 0.3s;
+    outline: none;
+  }
+  
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border: solid black 2px;
+  }
+  
+.form-container .cancel {
+    background-color: red;
+  }
+  
+.open-button:hover {
+    opacity: 1;
+    transition: 0.5s;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+  }
+
+.form-container button:hover{
+    color: black;
+}
